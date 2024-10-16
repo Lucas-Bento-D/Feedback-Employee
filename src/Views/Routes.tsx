@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home';
 import Employee from './Employee';
 import Container from '../Components/Container';
+import Header from '../Components/Header';
 
 const router = createBrowserRouter([
     {
@@ -16,9 +17,12 @@ const router = createBrowserRouter([
 ])
 const Routes = () => {
     return (
-        <Container>
-            <RouterProvider {...{router}}/>
-        </Container>
+        <>
+            <Header />
+            <Container className="my-4">
+                <RouterProvider {...{router}}/>
+            </Container>
+        </>
     )
 }
 export default Routes

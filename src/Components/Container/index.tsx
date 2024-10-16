@@ -2,11 +2,11 @@ import{ ReactNode } from "react"
 
 interface IProps{
     children: ReactNode
-
+    className?: string
 }
-const Container = ({children}: IProps) => {
+const Container = ({className: classes, children}: IProps) => {
     return(
-        <main className="container border border-solid border-black my-7">
+        <main className={` ${classes} container`}>
             {children}
         </main>
     )

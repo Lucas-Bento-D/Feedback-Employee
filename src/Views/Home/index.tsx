@@ -4,7 +4,7 @@ import SearchBar from "../../Components/SearchBar"
 const Home = () => {
     return(
         <>
-            <h2>Colaboradores</h2>
+            <h2>Equipe</h2>
             <div>
                 <SearchBar />
                 <button>adicionar colaborador</button>
